@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import  Navbar  from "@/components/home/navbar"
+import  Footer  from "@/components/home/footer"
 import { FloatingContact } from "@/components/floating-contact"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
