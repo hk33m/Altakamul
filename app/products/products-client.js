@@ -133,7 +133,7 @@ useEffect(() => {
             />
           </div>
           <div className="container relative mx-auto px-4 text-center lg:px-8">
-            <h1 className="mb-4 text-4xl font-bold text-takar lg:text-5xl">
+            <h1 className="mb-4 text-4xl font-bold text-takarr lg:text-5xl">
               منتجاتنا
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-primary-foreground/90">
