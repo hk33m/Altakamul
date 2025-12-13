@@ -156,6 +156,7 @@ export default function ContactPage() {
     }));
   };
 
+  
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />

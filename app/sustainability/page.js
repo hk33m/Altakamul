@@ -85,6 +85,13 @@ const socialResponsibility = [
   },
 ];
 
+export const metadata = {
+  title: "الاستدامة | مصنع التكامل للأعلاف",
+  description: "نلتزم في مصنع التكامل للأعلاف بممارسات الاستدامة البيئية والمسؤولية الاجتماعية لضمان إنتاج أعلاف صديقة للبيئة.",
+  keywords: ["استدامة", "بيئة", "مسؤولية اجتماعية", "أعلاف صديقة للبيئة", "مصنع أعلاف", "إنتاج مستدام"],
+};
+
+
 export default function SustainabilityPage() {
   return (
     <div className="flex min-h-screen flex-col">

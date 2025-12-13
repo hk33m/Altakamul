@@ -103,6 +103,12 @@ const faqs = [
   },
 ];
 
+export const metadata = {
+  title: "الجودة | مصنع التكامل للأعلاف",
+  description: "نضمن أعلى معايير الجودة في كل منتجات مصنع التكامل للأعلاف، مع الالتزام بالمواصفات العالمية والرقابة الصارمة.",
+  keywords: ["الجودة", "معايير الجودة", "رقابة", "أعلاف مضمونة", "إنتاج عالي الجودة", "مصنع أعلاف"],
+};
+
 export default function QualityPage() {
   return (
     <div className="flex min-h-screen flex-col">

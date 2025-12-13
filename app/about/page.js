@@ -45,6 +45,12 @@ const values = [
   },
 ];
 
+export const metadata = {
+  title: "من نحن | مصنع التكامل للأعلاف",
+  description: "تعرف على مصنع التكامل للأعلاف ورؤيتنا في صناعة أعلاف الدواجن والماشية، والتزامنا بالجودة والإنتاج المستدام.",
+  keywords: ["عن المصنع", "رؤية", "أعلاف", "دواجن", "ماشية", "الجودة", "الاستدامة"],
+};
+
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col">

@@ -107,6 +107,12 @@ const technologies = [
   },
 ];
 
+export const metadata = {
+  title: "الإنتاج والتقنية | مصنع التكامل للأعلاف",
+  description: "تعرف على خطوط الإنتاج الحديثة والتقنيات المتطورة في مصنع التكامل للأعلاف لضمان أعلى جودة وكفاءة في إنتاج الأعلاف.",
+  keywords: ["الإنتاج", "التقنية", "خطوط الإنتاج", "أعلاف عالية الجودة", "معدات حديثة", "مصنع أعلاف"],
+};
+
 export default function ProductionPage() {
   return (
     <div className="flex min-h-screen flex-col">

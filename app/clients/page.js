@@ -64,6 +64,12 @@ const partners = [
   }
 ];
 
+export const metadata = {
+  title: "عملاؤنا | مصنع التكامل للأعلاف",
+  description: "نفتخر بشراكتنا مع مجموعة واسعة من عملاء الدواجن والماشية في المملكة العربية السعودية، ونحرص على تلبية احتياجاتهم بأعلى جودة.",
+  keywords: ["عملاء", "شركاء", "دواجن", "ماشية", "توريد أعلاف", "مصنع أعلاف", "السعودية"],
+};
+
 export default function ClientsPage() {
   return (
     <div className="flex min-h-screen flex-col">
