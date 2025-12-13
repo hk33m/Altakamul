@@ -1,5 +1,5 @@
 "use client";
-import { useSearchParams } from "next/navigation"
+// import { useSearchParams } from "next/navigation"
 import { useEffect } from "react"
 import { useState } from "react";
 import  Navbar  from "@/components/home/navbar";
@@ -98,23 +98,23 @@ const products = [
 ];
 
 export default function ProductsPage() {
-  
-  const searchParams = useSearchParams()
-const initialTab = searchParams.get("tab") || "breeder"
 
-const [activeTab, setActiveTab] = useState(initialTab)
+//   const searchParams = useSearchParams()
+// const initialTab = searchParams.get("tab") || "breeder"
 
-useEffect(() => {
-  const paramTab = searchParams.get("tab")
-  if (paramTab) {
-    setActiveTab(paramTab)
+const [activeTab, setActiveTab] = useState("breeder")
 
-    // بعد تغيير التاب — ننزل للسكشن
-    setTimeout(() => {
-      window.scrollTo({ top: 300, behavior: "smooth" })
-    }, 100)
-  }
-}, [searchParams])
+// useEffect(() => {
+//   const paramTab = searchParams.get("tab")
+//   if (paramTab) {
+//     setActiveTab(paramTab)
+
+//     // بعد تغيير التاب — ننزل للسكشن
+//     setTimeout(() => {
+//       window.scrollTo({ top: 300, behavior: "smooth" })
+//     }, 100)
+//   }
+// }, [searchParams])
 
 
   return (
