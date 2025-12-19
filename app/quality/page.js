@@ -256,7 +256,7 @@ export default function QualityPage() {
               <div className="relative">
                 <div className="aspect-square overflow-hidden rounded-2xl">
                   <img
-                    src="/quality.jpg"
+                    src="https://cornflowerblue-albatross-308247.hostingersite.com/images/quality.jpg"
                     alt="مختبر الجودة"
                     className="h-full w-full object-cover"
                   />

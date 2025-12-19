@@ -21,7 +21,7 @@ export function PartnersSection() {
               key={index}
               className="flex items-center justify-center rounded-lg dark:bg-white p-6  transition-all hover:grayscale-0"
             >
-              <img src={partner.logo || "/placeholder.svg"} alt={partner.name} className="h-12 w-auto object-contain" />
+              <img src={partner.logo || "https://cornflowerblue-albatross-308247.hostingersite.com/images/placeholder.svg"} alt={partner.name} className="h-12 w-auto object-contain" />
             </div>
           ))}
         </div>

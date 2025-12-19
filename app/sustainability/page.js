@@ -278,7 +278,7 @@ export default function SustainabilityPage() {
               <div className="relative">
                 <div className="aspect-[4/3] overflow-hidden rounded-2xl">
                   <img
-                    src="/poultry-farm-with-healthy-chickens.jpg"
+                    src="https://cornflowerblue-albatross-308247.hostingersite.com/images/poultry-farm-with-healthy-chickens.jpg"
                     alt="حلول أعلاف مستدامة"
                     className="h-full w-full object-cover"
                   />

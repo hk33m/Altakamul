@@ -7,14 +7,9 @@ const footerLinks = {
     { name: "رؤيتنا", href: "/about#vision" },
     { name: "رسالتنا", href: "/about#mission" },
     { name: "الاستدامة", href: "/sustainability" },
-  ],
-  products: [
-    { name: "أعلاف الأمهات", href: "/products?tab=breeder" },
-    { name: "أعلاف البياض", href: "/products?tab=layer" },
-    { name: "أعلاف اللاحم", href: "/products?tab=broiler" },
-    { name: "أعلاف الماشية", href: "/products?tab=cattle" },
-  ],
-  support: [{ name: "تواصل معنا", href: "/contact" }],
+    { name: "منتجاتنا", href: "/product" },
+    { name: "تواصل معنا", href: "/contact" },
+  ]
 };
 
 export default function Footer() {
@@ -59,7 +54,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="mb-4 font-semibold text-taka">الشركة</h4>
+            <h4 className="mb-4 font-semibold text-taka">روابط سريعة</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -73,40 +68,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Products Links */}
-          <div>
-            <h4 className="mb-4 font-semibold text-taka">منتجاتنا</h4>
-            <ul className="space-y-2">
-              {footerLinks.products.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support Links */}
-          <div>
-            <h4 className="mb-4 font-semibold text-taka">الدعم</h4>
-            <ul className="space-y-2">
-              {footerLinks.support.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 md:flex-row">

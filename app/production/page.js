@@ -1,5 +1,4 @@
-import  Navbar  from "@/components/home/navbar";
-import  Footer  from "@/components/home/footer";
+
 import { FloatingContact } from "@/components/floating-contact";
 import {
   Factory,
@@ -281,21 +280,21 @@ export default function ProductionPage() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <div className="aspect-[4/3] overflow-hidden rounded-2xl">
                 <img
-                  src="/modern-feed-production-line-machinery.jpg"
+                  src="https://cornflowerblue-albatross-308247.hostingersite.com/images/modern-feed-production-line-machinery.jpg"
                   alt="خط الإنتاج"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="aspect-[4/3] overflow-hidden rounded-2xl">
                 <img
-                  src="/industrial-feed-manufacturing-factory-aerial-view.jpg"
+                  src="https://cornflowerblue-albatross-308247.hostingersite.com/images/industrial-feed-manufacturing-factory-aerial-view.jpg"
                   alt="المصنع من الداخل"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="aspect-[4/3] overflow-hidden rounded-2xl md:col-span-2 lg:col-span-1">
                 <img
-                  src="/quality.jpg"
+                  src="https://cornflowerblue-albatross-308247.hostingersite.com/images/quality.jpg"
                   alt="مختبر الجودة"
                   className="h-full w-full object-cover"
                 />

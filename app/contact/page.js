@@ -208,11 +208,11 @@ export default function ContactPage() {
                 {/* Main contact card */}
                 <Card className="overflow-hidden border-0 bg-white shadow-xl dark:bg-card">
                   <CardContent className="p-0">
-                    <div className="bg-gradient-to-br from-primary to-takar p-6 text-white">
+                    <div className="bg-gradient-to-br from-primary to-takar p-6 text-primary-foreground ">
                       <h2 className="mb-2 text-xl font-bold">
                         معلومات التواصل
                       </h2>
-                      <p className="text-sm text-white/80">
+                      <p className="text-sm text-primary-foreground">
                         يسعدنا تواصلكم عبر أي من القنوات التالية
                       </p>
                     </div>

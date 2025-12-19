@@ -31,7 +31,7 @@ export function QualitySection() {
           {/* Image */}
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/3] overflow-hidden rounded-2xl">
-              <img src="/quality.jpg" alt="مختبر ضبط الجودة" className="h-full w-full object-cover" />
+              <img src="https://cornflowerblue-albatross-308247.hostingersite.com/images/quality.jpg" alt="مختبر ضبط الجودة" className="h-full w-full object-cover" />
             </div>
             <div className="absolute -bottom-2 -left-2 rounded-xl bg-primary p-6 text-primary-foreground shadow-xl bg-takar">
               <div className="text-3xl font-bold ">100%</div>

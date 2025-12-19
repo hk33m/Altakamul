@@ -111,7 +111,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/3] overflow-hidden rounded-2xl">
                   <img
-                    src="/modern-feed-production-line-machinery.jpg"
+                    src="https://cornflowerblue-albatross-308247.hostingersite.com/images/modern-feed-production-line-machinery.jpg"
                     alt="مصنع التكامل للأعلاف"
                     className="h-full w-full object-cover"
                   />
