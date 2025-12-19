@@ -89,6 +89,12 @@ export function ProductsSection() {
     </div>
 }
 
+ if(!products || products == null || products.length===0){
+   return <div >
+         
+       </div>
+ }
+
   return (
     <section className="bg-muted/30 py-20 lg:py-28">
       <div className="container mx-auto px-4 lg:px-8">

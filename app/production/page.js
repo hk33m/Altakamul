@@ -1,4 +1,5 @@
-
+import  Navbar  from "@/components/home/navbar";
+import  Footer  from "@/components/home/footer";
 import { FloatingContact } from "@/components/floating-contact";
 import {
   Factory,
