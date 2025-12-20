@@ -29,36 +29,24 @@ export default function ProductDetailPage({ params }) {
   const [product, setProduct] = useState([])
 
 useEffect(() => {
-  if (!slug) return; // حماية: لا تنفذ قبل توفر slug
-
-  const fetchProducts = async () => {
-    try {
-      setLoading(true);
-      setError(false);
-
-      const res = await fetch(
-        `https://cornflowerblue-albatross-308247.hostingersite.com/api/get_products.php?id=${slug}`
-      );
-
-      if (!res.ok) throw new Error("فشل تحميل البيانات");
-
-      const data = await res.json();
-
-      if (!data || data.length === 0) {
-        throw new Error("المنتج غير موجود");
+    const fetchProducts = async () => {
+      try {
+        const res = await fetch(
+          `https://cornflowerblue-albatross-308247.hostingersite.com/api/get_products.php?id=${slug}`
+        );
+        if (!res.ok) throw new Error("فشل تحميل البيانات"); // تحقق من حالة HTTP
+        const data = await res.json();
+        if (data) setProduct(data);
+      } catch (err) {
+        console.error("حدث خطأ أثناء جلب المنتجات:", err);
+        setError(true); // يمكن استخدامه لإظهار رسالة خطأ
+      } finally {
+        setLoading(false); // سيغلق الـloading مهما حصل
       }
+    };
 
-      setProduct(data);
-    } catch (err) {
-      console.error("حدث خطأ أثناء جلب المنتجات:", err);
-      setError(true);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  fetchProducts(); // ← هذا كان ناقص ❗
-}, [slug]);
+    fetchProducts();
+  }, []);
 
 
   const handleShare = (platform) => {
