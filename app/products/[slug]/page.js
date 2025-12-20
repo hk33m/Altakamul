@@ -14,101 +14,6 @@ import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css';
 
 
-// const productsData = [
-//   {
-//     id: "breeder",
-//     title: "أعلاف الأمهات",
-//     titleEn: "Breeder Feed",
-//     description: "مصممة لدعم الخصوبة وتحسين صحة القطيع، بما يضمن إنتاج كتاكيت قوية وعالية الجودة.",
-//     fullDescription:
-//       "أعلاف الأمهات من مصنع التكامل مصممة خصيصاً لتلبية الاحتياجات الغذائية الفريدة لقطعان التربية. توفر تركيبتنا المتوازنة جميع العناصر الغذائية الضرورية لدعم الخصوبة العالية وإنتاج بيض فقس ممتاز.",
-//     images: [
-//       "/breeder-chicken-feed-pellets.jpg",
-//       "/breeder-feed-in-factory-production-line.jpg",
-//       "/chicken-breeder-farm-with-quality-feed.jpg",
-//       "/breeder-feed-pellets-close-up.jpg",
-//     ],
-//     badge: "عالي الجودة",
-//     benefits: [
-//       "تحسين معدلات الخصوبة والفقس",
-//       "دعم صحة الأمهات خلال فترة الإنتاج",
-//       "تعزيز جودة البيض وقوة الكتاكيت",
-//       "توازن مثالي للفيتامينات والمعادن",
-//       "تركيبة علمية مدروسة",
-//     ],
-//     usage: "قطعان التربية والأمهات في جميع مراحل الإنتاج",
-//   },
-//   {
-//     id: "layer",
-//     title: "أعلاف البياض",
-//     titleEn: "Layer Feed",
-//     description: "تدعم زيادة إنتاج البيض وتحافظ على جودته وقيمته الغذائية العالية.",
-//     fullDescription:
-//       "أعلاف البياض مصممة لتحقيق أقصى إنتاجية من البيض مع الحفاظ على جودة القشرة والمحتوى الغذائي. تركيبتنا توفر الكالسيوم والفوسفور بنسب مثالية لضمان قشرة قوية وبيض عالي الجودة.",
-//     images: [
-//       "/layer-chicken-feed-with-eggs.jpg",
-//       "/layer-chicken-feed-production-facility.jpg",
-//       "/egg-production-farm-with-layer-feed.jpg",
-//       "/layer-feed-pellets-manufacturing.jpg",
-//     ],
-//     badge: "الأكثر مبيعاً",
-//     benefits: [
-//       "زيادة معدل إنتاج البيض",
-//       "تحسين جودة القشرة وسمكها",
-//       "رفع القيمة الغذائية للبيض",
-//       "دعم صحة الدجاج البياض",
-//       "كفاءة عالية في التحويل الغذائي",
-//     ],
-//     usage: "الدجاج البياض في مرحلة الإنتاج الكامل",
-//   },
-//   {
-//     id: "broiler",
-//     title: "أعلاف اللاحم",
-//     titleEn: "Broiler Feed",
-//     description: "تركيبات غنية ومتوازنة تساهم في تحقيق نمو سريع ووزن مثالي خلال فترة التسمين.",
-//     fullDescription:
-//       "أعلاف اللاحم من مصنع التكامل مصممة لتحقيق أسرع معدلات نمو مع الحفاظ على صحة الطيور. نوفر تركيبات متخصصة لكل مرحلة من مراحل التربية: البادئ، النامي، والناهي.",
-//     images: [
-//       "/broiler-chicken-feed-grains.jpg",
-//       "/broiler-feed-pellets-high-quality.jpg",
-//       "/placeholder.svg?height=600&width=800",
-//       "/placeholder.svg?height=600&width=800",
-//     ],
-//     badge: "نمو سريع",
-//     benefits: [
-//       "معدلات نمو متسارعة",
-//       "تحويل غذائي ممتاز",
-//       "تحسين جودة اللحم",
-//       "تقليل فترة التربية",
-//       "صحة مثالية للطيور",
-//     ],
-//     usage: "دجاج اللاحم في جميع مراحل التربية (بادئ - نامي - ناهي)",
-//   },
-//   {
-//     id: "cattle",
-//     title: "أعلاف الماشية",
-//     titleEn: "Cattle Feed",
-//     description: "توفر تغذية متوازنة تضمن صحة أفضل وإنتاجية مستدامة في اللحوم أو الألبان.",
-//     fullDescription:
-//       "أعلاف الماشية من مصنع التكامل مصممة لتلبية الاحتياجات الغذائية المتنوعة للأبقار والأغنام والماعز. سواء كانت للحليب أو اللحم، توفر تركيباتنا التوازن المثالي للطاقة والبروتين.",
-//     images: [
-//       "/cattle-livestock-feed-pellets.jpg",
-//       "/placeholder.svg?height=600&width=800",
-//       "/placeholder.svg?height=600&width=800",
-//       "/placeholder.svg?height=600&width=800",
-//     ],
-//     badge: "تغذية متكاملة",
-//     benefits: [
-//       "زيادة إنتاج الحليب",
-//       "تحسين معدلات النمو",
-//       "دعم صحة الجهاز الهضمي",
-//       "تعزيز المناعة الطبيعية",
-//       "جودة عالية للحم",
-//     ],
-//     usage: "الأبقار والأغنام والماعز للحليب واللحم",
-//   },
-// ]
-
 export default function ProductDetailPage({ params }) {
   const { slug } = use(params)
   //const product = productsData.find((p) => p.id === slug)
@@ -124,24 +29,36 @@ export default function ProductDetailPage({ params }) {
   const [product, setProduct] = useState([])
 
 useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch(
-          `https://cornflowerblue-albatross-308247.hostingersite.com/api/get_products.php?id=${slug}`
-        );
-        if (!res.ok) throw new Error("فشل تحميل البيانات"); // تحقق من حالة HTTP
-        const data = await res.json();
-        if (data) setProduct(data);
-      } catch (err) {
-        console.error("حدث خطأ أثناء جلب المنتجات:", err);
-        setError(true); // يمكن استخدامه لإظهار رسالة خطأ
-      } finally {
-        setLoading(false); // سيغلق الـloading مهما حصل
-      }
-    };
+  if (!slug) return; // حماية: لا تنفذ قبل توفر slug
 
-    fetchProducts();
-  }, []);
+  const fetchProducts = async () => {
+    try {
+      setLoading(true);
+      setError(false);
+
+      const res = await fetch(
+        `https://cornflowerblue-albatross-308247.hostingersite.com/api/get_products.php?id=${slug}`
+      );
+
+      if (!res.ok) throw new Error("فشل تحميل البيانات");
+
+      const data = await res.json();
+
+      if (!data || data.length === 0) {
+        throw new Error("المنتج غير موجود");
+      }
+
+      setProduct(data);
+    } catch (err) {
+      console.error("حدث خطأ أثناء جلب المنتجات:", err);
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchProducts(); // ← هذا كان ناقص ❗
+}, [slug]);
 
 
   const handleShare = (platform) => {
