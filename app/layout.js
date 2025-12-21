@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
-  title: "مصنع التكامل للأعلاف | Al-Takamul Factory for Fodder",
+  title: "مصنع التكامل للأعلاف | Al-Takamul Feed Factory",
   description:
     "مصنع التكامل للأعلاف في المملكة العربية السعودية - الشريك الموثوق لإنتاج أعلاف الدواجن والماشية عالية الجودة بقدرة إنتاجية تصل إلى 120 طن في الساعة. نقدم منتجات أعلاف عضوية ومدعمة بالفيتامينات لتغذية أفضل لمزارع الدواجن والماشية.",
   keywords: [
@@ -36,8 +36,7 @@ export const metadata = {
   ],
   icons: {
     icon: [
-      { url: "/32-01.png" }, // Favicon للتبويب والمتصفح
-      { url: "/180-01.svg", type: "image/svg+xml" }, // SVG عام
+      { url: "/favicon.ico" }, // Favicon للتبويب والمتصفح
     ],
     apple: "/180-01.png", // iPhone/iPad Home Screen
     android: "/192.png", // Android Home Screen / PWA
