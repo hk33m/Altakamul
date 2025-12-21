@@ -10,6 +10,7 @@ export const metadata = {
     "أعلاف",
     "أعلاف دواجن",
     "أعلاف ماشية",
+    "منتجات أعلاف",
     "feed",
     "poultry feed",
     "livestock feed",
